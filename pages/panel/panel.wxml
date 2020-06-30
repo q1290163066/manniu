@@ -1,0 +1,26 @@
+<!--pages/panel/panel.wxml-->
+<!-- 最外侧大盒子 -->
+<view class="bingbox">
+<!-- 头部 -->
+<view class="nav">
+<view class="inpeople">
+今日可邀请人数
+<view wx:for="{{invite_number}}" wx:key="index" class="iwpeople">{{item}}</view>
+</view>
+
+<view class="whippletree"></view>
+
+<view class="inpeople">
+总邀请人数
+<view wx:for="{{invite_number}}" wx:key="index" class="iwpeople">{{item}}</view>
+</view>
+</view>
+<!-- 正文 -->
+<view class="content">
+<view class="role">邀请名单</view>
+
+<view wx:for="{{inviter_list}}" wx:key="index" class='inwalist'>{{item}}</view>
+
+</view>
+
+</view>

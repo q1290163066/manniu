@@ -1,0 +1,93 @@
+/* pages/recommend/recommend.wxss */
+/* 最外侧大盒子 */
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #eed439;
+  display: flex;
+  flex-direction: column;
+}
+/* 头部 */
+
+/* 分享盒 */
+.immediately{
+  margin: 355rpx 0 60rpx 65rpx;
+  height: 810rpx;
+  width: 610rpx;
+  background-color: #fff;
+  border-radius: 50rpx;
+}
+/* 盒子内容，头部 */
+.inward{
+  height: 140rpx;
+  width: 100%;
+  display: flex;
+  margin: 50rpx 0 0 50rpx;
+}
+.inward text{
+  height: 70rpx;
+  width: 70rpx;
+  font-size: 35rpx;
+  border-radius: 50%;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: #eed439;
+  margin-top: 50rpx;
+}
+/* 小圆点 */
+.dot{
+  width: 150rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.dot view{
+    display: inline-block;
+    height: 10rpx;
+    width: 10rpx;
+    border-radius: 50%;
+    margin-left: 10rpx;
+}
+.yuan-first{
+  background-color: #f5e05f;
+}
+.yuan-two{
+  background-color: #f9e682;
+}
+.yuan-third{
+  background-color: #fbf0b4;
+}
+.yuan-four{
+  background-color: #fdf8d9;
+}
+/* 盒子中部内容 */
+.award{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  padding: 30rpx 0 30rpx 0;
+  border-top: 1rpx solid #eeeeee;
+  border-bottom:  1rpx solid #eeeeee;
+}
+.reward{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx 0 30rpx;
+  font-size: 30rpx;
+}
+.hr{
+  margin:20rpx 0 20rpx 0;
+  border-top: 1rpx solid #eeeeee;
+}
+.details{
+  color: red;
+}
+.btn{
+  margin-top: 140rpx;
+  width: 85%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background-color: #f6df5b;
+}

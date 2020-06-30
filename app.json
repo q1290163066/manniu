@@ -9,7 +9,9 @@
     "pages/ticket/ticket",
     "pages/fillIn/fillIn",
     "pages/addressList/addressList",
-    "pages/addressEdit/addressEdit"
+    "pages/addressEdit/addressEdit",
+    "pages/recommend/recommend",
+    "pages/panel/panel"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,28 +22,28 @@
     "navigationStyle": "default"
   },
   "tabBar": {
-    "color": "#656565",
-    "selectedColor": "#99cc33",
+    "color": "#999999",
+    "selectedColor": "#ff0018",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "selectedIconPath": "images/homeed.png",
-        "iconPath": "images/home.png"
+        "selectedIconPath": "images/homed.png",
+        "iconPath": "images/home-select.png"
       },
       {
         "pagePath": "pages/classify/classify",
         "text": "分类",
-        "selectedIconPath": "images/classifyed.png",
-        "iconPath": "images/classify.png"
+        "selectedIconPath": "images/class.png",
+        "iconPath": "images/class-select.png"
       },
       {
         "pagePath": "pages/buyer/buyer",
         "text": "我",
-        "selectedIconPath": "images/buyered.png",
-        "iconPath": "images/buyer.png"
+        "selectedIconPath": "images/mine.png",
+        "iconPath": "images/mine-select.png"
       }
     ]
   },

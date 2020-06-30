@@ -95,6 +95,20 @@
 					"id": -1,
 					"name": "pages/fillIn/fillIn",
 					"pathName": "pages/fillIn/fillIn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recommend/recommend",
+					"pathName": "pages/recommend/recommend",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/panel/panel",
+					"pathName": "pages/panel/panel",
 					"scene": null
 				}
 			]

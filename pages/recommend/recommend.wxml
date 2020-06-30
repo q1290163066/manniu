@@ -1,0 +1,48 @@
+<!--pages/recommend/recommend.wxml-->
+<!-- 邀请页面 -->
+<!-- 最外侧大盒子 -->
+<view class="bingbox">
+<!-- 背景图 -->
+<view class="make"> 
+
+</view>
+<!-- 分享盒子 -->
+<view class="immediately">
+<!-- 盒子头部内容 -->
+<view class="inward">
+<text>邀</text>
+<view class="dot">
+<view class="yuan-first"></view>
+<view class="yuan-two"></view>
+<view class="yuan-third"></view>
+<view class="yuan-four"></view>
+</view>
+<text>注</text>
+<view class="dot">
+<view class="yuan-first"></view>
+<view class="yuan-two"></view>
+<view class="yuan-third"></view>
+<view class="yuan-four"></view>
+</view>
+<text>奖</text>
+</view>
+<!-- 盒子中部内容 -->
+<!-- 上半部分 -->
+<view class="award">
+<view class="reward">
+<text>我的现金奖励</text>
+<text>元</text>
+</view>
+<view class="hr"></view>
+<view class="reward">
+<text>已邀请人数（）</text>
+<text class="details">查看详情</text>
+</view>
+</view>
+<button class="btn">立即邀请</button>
+</view>
+<!-- 盒子底部 -->
+
+
+</view>
+
