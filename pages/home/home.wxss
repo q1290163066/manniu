@@ -1,0 +1,90 @@
+/* pages/home/home.wxss */
+.bgi{
+  height: 380rpx;
+  background-color: #f6df5b;
+}
+.hotSearch{
+  margin: 0 30rpx;
+}
+.title{
+  font-size: 13px;
+}
+.content {
+  margin-left:10rpx ;
+  display: inline-block;
+  border-radius: 40rpx;
+  padding: 4rpx 16rpx;
+  background-color: #faefad;
+  font-size: 12px;
+  color: #424242;
+}
+.box{
+  position: relative;
+  top: -100rpx;
+}
+/*goodsSwiper*/
+.goodsSwiper_img{
+  width: 100%;
+  height: 100%;
+}
+/*menu*/
+.menu-coutainer{
+  height: 360rpx;
+  margin: 0 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 4px 0px #ccc;
+  border-radius: 20rpx;
+}
+.li{
+  width: 25%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.img{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 30%;
+}
+.text{
+  color: #888;
+  font-size: 12px;
+}
+.h2{
+  text-align: center;
+  font-weight: 900;
+  color: #424242;
+  font-size: 32rpx;
+  margin: 56rpx 0;
+}
+.wrapper{
+  margin-top: -100rpx;
+}
+.popularity{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shop{
+  width: 330rpx;
+  margin-top: 10rpx;
+}
+.shop>image{
+  width: 330rpx;
+  height: 330rpx;
+  border-radius: 20rpx;
+}
+.shop>view{
+  font-size: 24rpx;
+}
+.shop_title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.price{
+  margin-top: 10rpx;
+  color: red;
+}

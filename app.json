@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/classify/classify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#99cc33",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "images/homeed.png",
+        "iconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "selectedIconPath": "images/classifyed.png",
+        "iconPath": "images/classify.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<!--pages/components/goodsArea.wxml-->
+<view class="goodsArea_wrapper">
+  <view class="goodsList">
+    <block wx:for="{{areaData.items}}" wx:key="id">
+      <good-item itembox-class="gooditem-inarea" good-data="{{item}}" binding="$"></good-item>
+    </block>
+  </view>
+</view>

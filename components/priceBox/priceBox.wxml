@@ -1,0 +1,4 @@
+<!--components/priceBox/priceBox.wxml-->
+<view class="pricebox-class padding_x">
+  <text class="{{inItem?'':'newprice'}} newprice-class">{{"¥"+nowPrice}}</text>
+</view>

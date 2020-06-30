@@ -1,0 +1,12 @@
+<!--pages/components/goodItem.wxml-->
+<view class="itembox-class observer-class" data-id="{{goodData.id}}" bindtap='tapToDetail'>
+  <image class="{{inClassify?'inlist_img':'inarea_img'}}" src="{{goodData.mainPhoto}}" mode="aspectFill" binderror="errImg" data-errimg="goodData.mainPhoto" lazy-load='true'></image>
+  <text class="goodname {{inClassify?'inlist_name text-ellipsis':'inarea_name'}}">{{goodData.name}}</text>
+  <text class="goodintroduce text-ellipsis" wx:if="{{inClassify}}">{{goodData.title}}</text>
+  <block wx:if='{{!isGift}}'>
+  <price-box now-price="{{goodData.price}}" last-price="{{goodData.goods_price}}" newprice-class="{{inClassify?'inlist_newprice':'inarea_newprice'}}" lastprice-class="{{inClassify?'inlist_lastprice':'inarea_lastprice'}}" in-item="{{!inClassify}}"></price-box>
+  </block>
+  <block wx:else>
+    <text class="goodname inlist_name">积分<text class="inarea_newprice">{{' '+goodData.giftPrice}}</text></text>
+  </block>
+</view>
