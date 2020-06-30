@@ -1,0 +1,62 @@
+/* pages/components/goodItem.wxss */
+.goodname{
+  color: #333;
+}
+.goodintroduce{
+  width: 480rpx;
+  color: #585858;
+  font-size: 24rpx;
+  margin-top:10rpx;
+  line-height: 32rpx;
+  height: 32rpx;
+}
+.text-ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.text-red{
+  color: #ff0000;
+}
+/*in home goods area*/
+.inarea_img{
+  width: 100%;
+  height: 310rpx;
+  padding: 20rpx 0;
+  border-radius: 20rpx;
+}
+.inarea_name{
+  font-size: 24rpx;
+  line-height: 33rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.inarea_newprice{
+  font-size: 28rpx;
+  color: #ff0000;
+}
+.inarea_lastprice{
+  font-size: 24rpx;
+  margin-left: 4rpx;
+}
+/*in classify goods list*/
+.inlist_img{
+  width: 310rpx;
+  height: 310rpx;
+  margin-right: 16rpx;
+}
+.inlist_name{
+  font-size: 28rpx;
+  line-height: 38rpx;
+  height: 38rpx;
+  width: 480rpx;
+}
+.inlist_newprice{
+  color: #ff0000;
+}
+.inlist_lastprice{
+  margin-left: 20rpx;
+  line-height: 48rpx;
+  height: 48rpx;
+}

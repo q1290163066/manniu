@@ -1,0 +1,33 @@
+/* pages/bindtel/bindtel.wxss */
+.page{
+  background: #fff;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  padding: 20rpx 30rpx; 
+  position: fixed;
+  font-size: 24rpx;
+}
+.nopadding{
+  padding: 0;
+}
+.input-middle{
+  width: 55%;
+}
+.btn-middle{
+  width:35%;
+  margin-left:20rpx;
+  font-size: 24rpx;
+  border-radius: 16rpx;
+}
+.bindTel-tip{
+  padding:40rpx 0 20rpx 20rpx;
+  font-size:30rpx;
+  color:#333;
+}
+.error-tip{
+  font-size:26rpx;
+  color:red;
+}
+

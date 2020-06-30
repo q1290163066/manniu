@@ -6,7 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"enhance": true,
+		"enhance": false,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -27,12 +27,12 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.1",
-	"appid": "wx758acd13b8e5c7ff",
+	"appid": "wx478bde90f0b83c8a",
 	"projectname": "jiagengyuan",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -56,20 +56,9 @@
 		"game": {
 			"list": []
 		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/balance/balance",
-					"pathName": "pages/balance/balance",
-					"scene": null
-				}
-			]
+			"list": []
 		}
 	}
 }

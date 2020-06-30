@@ -1,0 +1,54 @@
+<!--pages/trolley/trolley.wxml-->
+<view>
+  <block wx:if="{{goodsdata.length>0&&hasFetch}}">
+    <view class='page-bd'>
+      <checkbox-group bindchange="bindCheckBoxChange">
+          <view wx:for="{{goodsdata}}" wx:key='trolleyId' class='gooditem-inlist gooditem-flex'>
+            <label class='itembox_hd'>
+              <checkbox class="weui-check" value="{{item.trolleyId}}" checked="{{item.selected}}" />
+              <view class="weui-cell__hd">
+                <icon type="circle" size="20" wx:if="{{!item.selected}}"></icon>
+                <icon type="success" color="#99cc33" size="20" wx:if="{{item.selected}}"></icon>
+              </view>
+            </label>
+            <view class='itembox_bd' bindtap='bindToGoodDetail' data-id="{{item.id}}" data-index="{{index}}">
+              <image class="inlist_img" src="{{item.mainPhoto}}" mode="aspectFill" binderror="errImg" data-errimg="goodsdata[{{index}}].mainPhoto" lazy-load='true'></image>
+              <view class='desc-box'>
+                <view class='text-title'><text wx:if="{{item.tip}}" class='text-red'>{{'('+item.tip+')'}}</text>{{item.name+'('+(item.goods_status?'已下架':item.desc)+')'}}</view>
+                <view wx:if="{{item.mark!=2}}" class='text-red'>{{'¥'+item.theprice}}</view>
+                <view wx:else class='text-red'>{{'积分'+item.giftPrice}}</view>
+                <picker-num binding="$" picker-index='{{index}}' good-num="{{item.count}}"></picker-num>
+              </view>
+            </view>
+            <view class='itembox_ft' data-index='{{index}}' catchtap='deleteGood'>
+              <icon type="clear" size="20"></icon>
+            </view>
+          </view>
+      </checkbox-group>
+    </view>
+    <view class='page-ft_container ft-line_top'>
+      <view class='ft-desc'>
+        <view class='ft-desc_box'>
+          <view catchtap='choseAll'>
+            <icon type="success" color="#99cc33" size="20" wx:if="{{allchose}}"></icon>
+            <icon type="circle" size="20" wx:if="{{!allchose}}"></icon>
+            <text class='ft-text_padding'>全选</text>
+          </view>
+          <view class='text-default' wx:if="{{desc}}">{{desc}}</view>
+        </view>
+        <view class='ft-desc_box'>
+          <view class='ft-text_red'>{{'¥'+price}}</view>
+          <view class='ft-text_red'>{{'积分'+integral}}</view>
+        </view>
+      </view>
+      <view class='ft-btn ft-btn_red' bindtap='bindSettlement'>结算</view>
+    </view>
+  </block>
+  <block wx:elif="{{goodsdata.length==0&&hasFetch}}">
+    <view class='tip-box'>
+      <image class="tip-img" src='../../images/cart.png' mode='aspectFit' lazy-load='true'></image>
+      <view class='tip-text'>购物车空空的，赶紧去逛逛吧</view>
+      <button class='btn-plain tip-btn' bindtap="bindToHome">去逛逛</button>
+    </view>
+  </block>
+</view>

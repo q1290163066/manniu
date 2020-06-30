@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/classify/classify",
     "pages/buyer/buyer",
-    "pages/balance/balance"
+    "pages/trolley/trolley",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,6 +31,12 @@
         "text": "分类",
         "selectedIconPath": "images/classifyed.png",
         "iconPath": "images/classify.png"
+      },
+      {
+        "pagePath": "pages/trolley/trolley",
+        "text": "购物车",
+        "selectedIconPath": "images/carted.png",
+        "iconPath": "images/cart.png"
       },
       {
         "pagePath": "pages/buyer/buyer",

@@ -1,0 +1,31 @@
+<!--pages/bindtel/bindtel.wxml-->
+<view class='page'>
+  <form>
+    <view class="bindTel-tip" hidden="{{!isUpdeteTel}}">现绑定手机号：{{currentTel}}</view>
+    <view class='input-box'>
+      <input type='number' class='input-default' placeholder='请输入11位号码' value='{{telnum}}' bindinput='bindInputTel'></input>
+    </view>
+    <view class='input-box'>
+      <input type='text' class='input-default input-middle' placeholder='请输入手机验证码' value='{{code}}' bindinput='bindInputCode'></input>
+      <button class='btn-default btn-middle' bindtap='bindGetCode' disabled='{{cantGetCode}}'>{{gotCode?(gettingCode?'重新获取('+timeNum+'s)':'重新获取'):'获取手机验证码'}}</button>
+    </view>
+    <view class="error-tip">{{errorTip}}</view>
+    <view class='input-box' hidden="{{isUpdeteTel}}">
+      <checkbox-group bindchange="bindAgreeChange">
+        <label class="weui-agree nopadding" for="weuiAgree">
+          <view class="weui-agree__text">
+            <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+            <view class="weui-agree__checkbox-icon">
+              <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+            </view>
+            我已阅读并同意
+            <navigator url="" class="weui-agree__link">《用户服务协议》</navigator>
+          </view>
+        </label>
+      </checkbox-group>
+    </view>
+    <view class='input-box'>
+      <button class='btn-default btn-submit_default' loading='{{submiting}}' disabled='{{cantSubmit}}' bindtap='bindSubmit'>提交</button>
+    </view>
+  </form>
+</view>

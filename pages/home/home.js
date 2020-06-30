@@ -48,7 +48,8 @@ P('home',{
     })
   },
   getShopList(){
-    utils.PROMISE(Home.shopList, {pageSize:6}, 'POST').then( (result)=> {
+    let url=Home.shopList+'?pageSize=6'
+    utils.PROMISE(url, {}, 'POST').then( (result)=> {
       console.log(result.goodsList.objects)
       this.setData({
         shopList:result.goodsList.objects

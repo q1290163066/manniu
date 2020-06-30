@@ -1,0 +1,29 @@
+/* pages/balance/balance.wxss */
+.top{
+  height: 220rpx;
+  text-align: center;
+  margin-top: 194rpx;
+}
+.money{
+  font-size: 70rpx;
+  font-weight: bold;
+}
+.look{
+  font-size: 26rpx;
+  color: #777;
+  margin-top:40rpx ;
+}
+.recharge{
+  background-color: #f6df5b;
+  width: 356rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+  margin-top: 290rpx;
+}
+.w{
+  background-color: #fff;
+  margin-top: 20rpx;
+  color: #666;
+  font-size: 32rpx;
+}
