@@ -1,0 +1,19 @@
+/* pages/particulars/particulars.wxss */
+.box{
+  padding: 0 30rpx;
+}
+.box>view{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #777;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.box>view.header{
+  height: 230rpx;
+  line-height: 230rpx;
+}
+.money{
+  font-size: 70rpx;
+}

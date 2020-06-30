@@ -2,7 +2,7 @@
 <view class="top">
   <view class="h2">账户余额（元）</view>
   <view class="money">{{money}}</view>
-  <view class="look">查看明细 ></view>
+  <view class="look" bindtap="toDetail">查看明细 ></view>
 </view>
 <button class="recharge">充值</button>
 <button class="recharge w">余额提现</button>

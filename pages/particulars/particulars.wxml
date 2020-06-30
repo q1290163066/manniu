@@ -1,0 +1,23 @@
+<!--pages/particulars/particulars.wxml-->
+<view class="box">
+  <view class="header">
+    <view>余额支付</view>
+    <view class="money">+500.00</view>
+  </view>
+  <view class="type">
+    <view>交易类型</view>
+    <view>收入</view>
+  </view>
+  <view class="time">
+    <view>交易时间</view>
+    <view>2020-0</view>
+  </view>
+  <view class="odd">
+    <view>流水单号</view>
+    <view>20020505123</view>
+  </view>
+  <view class="remark">
+    <view>备注</view>
+    <view>充值</view>
+  </view>
+</view>

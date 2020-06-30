@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/classify/classify",
     "pages/buyer/buyer",
-    "pages/balance/balance"
+    "pages/balance/balance",
+    "pages/detail/detail",
+    "pages/particulars/particulars"
   ],
   "window": {
     "backgroundTextStyle": "light",
