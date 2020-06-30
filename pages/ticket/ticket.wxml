@@ -1,0 +1,38 @@
+<!--pages/ticket/ticket.wxml-->
+<!-- 优惠券页面 -->
+<view class="box">
+  <view class="left_circle circle"></view>
+  <view class="right_circle circle"></view>
+  <view class="top">
+    <view class="left">
+      <view class="type">尊享优惠券</view>
+      <view class="date">有效期至</view>
+    </view>
+    <view class="right">￥<text class="num">5</text></view>
+  </view>
+  <view class="bottom">备注信息：比如无门槛券</view>
+</view>
+<view class="box">
+  <view class="left_circle circle"></view>
+  <view class="right_circle circle"></view>
+  <view class="top">
+    <view class="left">
+      <view class="type">尊享优惠券</view>
+      <view class="date">有效期至</view>
+    </view>
+    <view class="right">￥<text class="num">5</text></view>
+  </view>
+  <view class="bottom">备注信息：比如无门槛券</view>
+</view>
+<view class="box">
+  <view class="left_circle circle"></view>
+  <view class="right_circle circle"></view>
+  <view class="top">
+    <view class="left">
+      <view class="type">尊享优惠券</view>
+      <view class="date">有效期至</view>
+    </view>
+    <view class="right">￥<text class="num">5</text></view>
+  </view>
+  <view class="bottom">备注信息：比如无门槛券</view>
+</view>

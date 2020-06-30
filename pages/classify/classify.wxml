@@ -1,4 +1,5 @@
 <!--pages/classify/classify.wxml-->
+<!-- 分类页 -->
 <view>
   <header></header>
 </view>

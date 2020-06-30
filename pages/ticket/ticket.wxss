@@ -1,0 +1,50 @@
+/* pages/ticket/ticket.wxss */
+.box{
+  position: relative;
+  padding:30rpx 24rpx 0 24rpx ;
+  background-color: #f0f0f0;
+}
+.box>view.circle{
+  position: absolute;
+  padding: 0;
+  top:217rpx ;
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  z-index: 1000;
+}
+.left_circle{
+  left: 0;
+}
+.right_circle{
+  right: 0;
+}
+.box>view{
+  background-color: #fff;
+  padding: 24rpx;
+}
+.top{
+  height: 170rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.type{
+  font-size: 36rpx;
+  color: #424242;
+}
+.date{
+  color: #aaa;
+  font-size: 28rpx;
+}
+.right{
+  color: red;
+}
+.num{
+  font-size: 70rpx;
+}
+.bottom{
+  margin-top: 2rpx;
+  font-size: 26rpx;
+  color: #aaa;
+}

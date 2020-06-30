@@ -1,13 +1,18 @@
 /* pages/home/home.wxss */
 .bgi{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   height: 380rpx;
   background-color: #f6df5b;
+  z-index: -10;
 }
 .hotSearch{
   margin: 0 30rpx;
 }
 .title{
-  font-size: 13px;
+  font-size: 26rpx;
 }
 .content {
   margin-left:10rpx ;
@@ -15,12 +20,11 @@
   border-radius: 40rpx;
   padding: 4rpx 16rpx;
   background-color: #faefad;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #424242;
 }
 .box{
-  position: relative;
-  top: -100rpx;
+  margin-top: 120rpx;
 }
 /*goodsSwiper*/
 .goodsSwiper_img{
@@ -48,7 +52,7 @@
 }
 .text{
   color: #888;
-  font-size: 12px;
+  font-size: 24rpx;
 }
 .h2{
   text-align: center;

@@ -1,3 +1,4 @@
+<!-- 流水 -->
 <view class='topTabSwiper'>
     <view>
       <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>全部</view>

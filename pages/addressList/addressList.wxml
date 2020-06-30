@@ -1,0 +1,23 @@
+<!--pages/addressList/addressList.wxml-->
+<view class='page-bd'>
+  <block wx:if="{{addressList.length>0}}">
+  <address-panel in-access="weui-cell__ft_in-access" address-info="{{addressList[0]}}" binding="$">
+    <view wx:if="{{orderCheck}}" bindtap='bindOrderCheck' data-index="0" class="weui-cell__hd weui-check__hd_in-checkbox">
+        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!addressList[0].checked}}"></icon>
+        <icon class="weui-icon-checkbox_success" type="success" color="rgb(153,204,51)" size="23" wx:if="{{addressList[0].checked}}"></icon>
+    </view>
+  </address-panel>
+    <address-panel  wx:for="{{addressList}}" wx:key="id" wx:if="{{index>0}}" in-access="weui-cell__ft_in-access" address-info="{{item}}" binding="$">
+      <view wx:if="{{orderCheck}}" bindtap='bindOrderCheck' data-index="{{index}}" class="weui-cell__hd weui-check__hd_in-checkbox">
+        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+        <icon class="weui-icon-checkbox_success" type="success" color="rgb(153,204,51)" size="23" wx:if="{{item.checked}}"></icon>
+      </view>
+    </address-panel>
+  </block>
+  <block wx:else>
+    <view class="text-nodata" hidden='{{haveData}}'>暂无数据</view>
+  </block>
+  <view class='input-box btn-submit_box'>
+      <button class='btn-default btn-submit_default' bindtap='bindAddAddress'>添加新地址</button>
+  </view>
+</view>

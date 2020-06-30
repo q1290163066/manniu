@@ -1,0 +1,57 @@
+/* components/addressPanel/addressPanel.wxss */
+.address-box{
+  background:#fff;
+  padding:0 30rpx;
+  font-size:28rpx;
+  line-height: 2;
+  margin-bottom: 20rpx
+}
+.address-border{
+  border-top:1rpx solid #dfdfdf; 
+  box-shadow: 2rpx 4rpx 10rpx #dfdfdf;
+}
+.address-line{
+  background: rgb(253, 249, 240);
+}
+.address-line::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  height: 8rpx;
+  background-image: url(https://jiagy.zerosky.top/resources/style/system/front/wap/jgy/images/colorful-line.jpg); 
+  background-size:100%; 
+}
+.panel_bd{
+  display: flex;
+  padding: 20rpx 0;
+}
+.panel_bd-outlist{
+  justify-content: space-between;
+}
+.bd_cell-hd{
+  margin-right:30rpx;
+  min-width: 120rpx;
+}
+.panel_ft{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #ddd;
+  font-size: 24rpx;
+  color: #a8a7a3;
+  padding: 10rpx 0;
+}
+.text-red{
+  color: #f17e77;
+}
+.ft_btn-box{
+  display: flex;
+}
+.ft_btn{
+  padding: 0 16rpx
+}
+.ft_btn-icon{
+  margin-right: 10rpx;
+  line-height:10rpx;
+}

@@ -1,4 +1,5 @@
 <!--pages/balance/balance.wxml-->
+<!-- 账户余额 -->
 <view class="top">
   <view class="h2">账户余额（元）</view>
   <view class="money">{{money}}</view>

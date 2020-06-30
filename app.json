@@ -5,7 +5,11 @@
     "pages/buyer/buyer",
     "pages/balance/balance",
     "pages/detail/detail",
-    "pages/particulars/particulars"
+    "pages/particulars/particulars",
+    "pages/ticket/ticket",
+    "pages/fillIn/fillIn",
+    "pages/addressList/addressList",
+    "pages/addressEdit/addressEdit"
   ],
   "window": {
     "backgroundTextStyle": "light",

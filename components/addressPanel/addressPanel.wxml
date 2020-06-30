@@ -1,0 +1,36 @@
+<!--components/addressPanel/addressPanel.wxml-->
+<view class='address-box {{addressInfo.defaultAddress?"address-line":""}} {{inlist?"address-border":""}}'>
+  <view class='panel_bd {{inlist?"panel_bd-inlist":"panel_bd-outlist"}}'>
+  <slot></slot>
+    <block wx:if="{{addressInfo.id}}">
+      <view class='bd_cell-hd'>{{addressInfo.name}}</view>
+      <view class='bd_cell-bd'>
+        <view>{{addressInfo.tel}}</view>
+        <view>{{addressInfo.address}}</view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='bd_cell-bd'>还没有收货地址，去填写您的收货地址吧</view>
+    </block>
+    <view wx:if="{{!inlist}}" class='in-access'></view>
+  </view>
+  <view wx:if="{{inlist}}" class='panel_ft'>
+    <view class='ft_desc'>
+      <view wx:if="{{addressInfo.defaultAddress}}" class='text-red'>【默认地址】</view>
+      <view wx:else catchtap='setDefault'>
+        <icon class='ft_btn-icon' type='success' size='14' color='#a8a7a3'></icon>
+        <text>设为默认</text>
+      </view>
+    </view>
+    <view class='ft_btn-box'>
+      <view class='ft_btn' catchtap='editAddress'>
+        <icon class='ft_btn-icon' type='info' size='14' color='#a8a7a3'></icon>
+        <text>编辑</text>
+      </view>
+      <view class='ft_btn' catchtap='delAddress'>
+        <icon class='ft_btn-icon' type='clear' size='14' color='#a8a7a3'></icon>
+        <text>删除</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -274,6 +274,10 @@ P('buyer', {
       wx.navigateTo({
         url: '/pages/balance/balance',
       })
+    }else if(id==2){
+      wx.navigateTo({
+        url: '/pages/ticket/ticket',
+      })
     }
   },
   errImg: function (ev) {

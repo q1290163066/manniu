@@ -1,0 +1,11 @@
+/* pages/addressEdit/addressEdit.wxss */
+.text-title{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 3.2;
+}
+.select-noborder{
+  border-right: 0;
+  height: auto;
+}
+

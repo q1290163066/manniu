@@ -1,4 +1,5 @@
 <!--pages/particulars/particulars.wxml-->
+<!--  流水明细-->
 <view class="box">
   <view class="header">
     <view>余额支付</view>
