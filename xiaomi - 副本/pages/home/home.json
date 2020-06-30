@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "header": "../../components/header/header",
-    "goods-area":"../../components/goodsArea/goodsArea"
-  }
-}

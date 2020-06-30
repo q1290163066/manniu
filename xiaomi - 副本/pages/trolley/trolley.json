@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "购物车",
-  "usingComponents":{
-    "picker-num":"../../components/pickerNum/pickerNum"
-  }
-}

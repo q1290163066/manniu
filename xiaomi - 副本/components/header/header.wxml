@@ -1,7 +1,0 @@
-<!--pages/components/header.wxml-->
-<view class="header">
-  <view class="search_box">
-    <view class="search_btn" bindtap='bindSearchGood'></view>
-    <input id="search" bindinput='bindInput' placeholder='{{placeholder}}' class="search_box-input" value="{{searchtext}}"></input>
-  </view>
-</view>

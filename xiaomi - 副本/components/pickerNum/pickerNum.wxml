@@ -1,6 +1,0 @@
-<!--components/pickerNum/pickerNum.wxml-->
-<view class='pickerbox_num'>
-  <view class='text-default' catchtap='bindLessen'>-</view>
-  <view class='text-default'>{{goodNum}}</view>
-  <view class='text-default' catchtap='bindAdd'>+</view>
-</view>
