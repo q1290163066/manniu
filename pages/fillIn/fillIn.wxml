@@ -1,11 +1,44 @@
-  <view class="weui-cells weui-cells_after-title" bindtap='bindToAddressList'>
-    <address-panel in-access="weui-cell__ft_in-access" address-info="{{addressData}}" inlist="{{false}}"></address-panel>
-    <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__bd bd_address-desc list-font_size">
-        <view>{{userInfo.name+' '+userInfo.tel}}</view>
-        <view>{{userInfo.address}}</view>
+<view class="weui-cells weui-cells_after-title" bindtap='bindToAddressList'>
+  <address-panel in-access="weui-cell__ft_in-access" address-info="{{addressData}}" inlist="{{false}}"></address-panel>
+  <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd bd_address-desc list-font_size">
+      <view>{{userInfo.name+' '+userInfo.tel}}</view>
+      <view>{{userInfo.address}}</view>
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>-->
+</view>
+<view class="box">
+  <view class="left">合计金额</view>
+  <view class="num">￥380.00</view>
+</view>
+<view class="box">
+  <view class="left">优惠券</view>
+  <view>></view>
+</view>
+<view class="box">
+  <view class="left">配送方式</view>
+  <view>快递 包邮</view>
+</view>
+<view class="remark">
+  <view class="title">订单备注</view>
+  <view class="weui-cells weui-cells_after-title setmargin-bottom list-font_size">
+    <view class="weui-cell">
+      <view class="weui-cell__bd lineheight-reset">
+        <!--<textarea value="{{message}}" class="weui-textarea {{message=='请输入文本'?'text-grey':''}}" style="height: 3.3em" bindinput='inputMessage' bindfocus="focusMessage" bindblur="blurMessage"></textarea>-->
+        <block wx:if="{{textareaFocus}}">
+          <textarea value="{{message}}" placeholder="请输入文本" class="weui-textarea" style="height: 3.3em" bindinput='inputMessage' bindblur="blurMessage" focus="{{textareaFocus}}"/>
+        </block>
+        <block wx:else>
+          <view bindtap="focusMessage" class="weui-textarea {{message=='请输入文本'?'text-grey':''}}" style="height: 3.3em">{{message}}</view>
+        </block>
+        <view class="weui-textarea-counter">{{message=="请输入文本"?0:message.length}}/200</view>
       </view>
-      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-    </navigator>-->
-    
+    </view>
   </view>
+</view>
+<view class="bottom">
+  <view class="allnum">共一件</view>
+  <view class="text">合计：<text class="allPrice">￥380.00</text></view>
+  <view class="btn">提交</view>
+</view>
